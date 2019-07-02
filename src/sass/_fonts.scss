@@ -1,0 +1,41 @@
+@font-face {
+  font-family: 'Proxima Nova Regular';
+  src: url('../fonts/ProximaNova-Regular.eot');
+  src: url('../fonts/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/ProximaNova-Regular.woff') format('woff'),
+    url('../fonts/ProximaNova-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gotham Pro Regular';
+  src: url('../fonts/GothamPro.eot');
+  src: url('../fonts/GothamPro.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/GothamPro.woff') format('woff'),
+    url('../fonts/GothamPro.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Playfair Display Bold';
+  src: url('../fonts/PlayfairDisplay-Bold.eot');
+  src: url('../fonts/PlayfairDisplay-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/PlayfairDisplay-Bold.woff') format('woff'),
+    url('../fonts/PlayfairDisplay-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@mixin proxima_reg {
+  font-family: 'Proxima Nova Regular', sans-serif;
+}
+
+@mixin gotham_reg {
+  font-family: 'Gotham Pro Regular', sans-serif;
+}
+
+@mixin playfair_bold {
+  font-family: 'Playfair Display Bold', serif;
+}
