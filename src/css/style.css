@@ -375,6 +375,7 @@ template {
 }
 
 body {
+  position: relative;
   font-family: 'Proxima Nova Regular', sans-serif;
 }
 
@@ -386,7 +387,237 @@ button:focus, input:focus, a:focus, textarea:focus, select:focus {
   outline: none;
 }
 
+a {
+  text-decoration: none;
+  color: #080425;
+}
+
 .container {
   width: 1170px;
   margin: auto;
+}
+
+.line {
+  width: 1px;
+  background-color: #999999;
+  opacity: 0.1;
+}
+
+.line:first-child, .line:last-child {
+  opacity: 0.3;
+}
+
+.lines {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 1170px;
+  margin: auto;
+}
+
+/* Настройка стилей header */
+.header {
+  background: url("../img/header/header-bg.png") center no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+
+.contacts {
+  padding: 11px 0 7px;
+}
+
+.contacts-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contacts__phone {
+  margin-top: 7px;
+  margin-left: 73px;
+}
+
+.contacts__adress {
+  margin-top: 7px;
+  margin-right: 92px;
+  margin-left: -23px;
+}
+
+.phone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.phone__image {
+  width: 11px;
+  height: 11px;
+  margin-right: 20px;
+}
+
+.phone__text {
+  width: 172px;
+  font-size: 13px;
+  line-height: 24px;
+  font-family: 'Gotham Pro Regular', sans-serif;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.phone__text-link {
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.adress {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.adress__image {
+  width: 9px;
+  height: 12px;
+  margin-right: 20px;
+}
+
+.adress__text {
+  width: 172px;
+  font-size: 13px;
+  line-height: 24px;
+  font-family: 'Gotham Pro Regular', sans-serif;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.adress__text-link {
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* Настройка стилей для меню */
+.navbar {
+  position: relative;
+  height: 78px;
+  background-color: #080425;
+}
+
+.navbar-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-menu > li > a {
+  display: block;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.9px;
+  color: #ffffff;
+  -webkit-transition: background-color 0.5s ease-in-out;
+  transition: background-color 0.5s ease-in-out;
+}
+
+.navbar-menu > li > a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.navbar-menu > li:hover .navbar-submenu {
+  opacity: 1;
+  -webkit-transform: scaleY(1);
+          transform: scaleY(1);
+}
+
+.navbar-submenu {
+  position: absolute;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background-color: #211e3b;
+  opacity: 0;
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
+
+.navbar-submenu > li > a {
+  display: block;
+  width: 213px;
+  padding: 18px 35px;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.78px;
+  color: #ffffff;
+  -webkit-transition: background-color 0.5s ease-in-out;
+  transition: background-color 0.5s ease-in-out;
+}
+
+.navbar-submenu > li > a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.submenu-link {
+  width: 213px;
+}
+
+.submenu-link:after {
+  content: '';
+  position: absolute;
+  top: 38px;
+  width: 9px;
+  height: 5px;
+  margin-left: 10px;
+  background: url("../img/header/arrow.png") center no-repeat;
+}
+
+.submenu-link_1 {
+  padding: 34px 49px 30px;
+}
+
+.submenu-link_2 {
+  padding: 34px 49px 30px 43px;
+}
+
+.submenu-link_3 {
+  padding: 34px 49px 30px 50px;
+}
+
+.submenu-link_4 {
+  padding: 34px 49px 30px 35px;
+}
+
+.submenu-link_5 {
+  padding: 34px 49px 30px 62px;
+}
+
+.submenu-link_6 {
+  padding: 34px 49px 30px 61px;
 }

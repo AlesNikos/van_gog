@@ -1,0 +1,71 @@
+.navbar
+  position: relative
+  height: 78px
+  background-color: #080425 
+  &-menu
+    display: flex
+    justify-content: flex-start
+    list-style: none
+    margin: 0
+    padding: 0
+    & > li > a 
+      display: block
+      // padding: 34px 49px 31px
+      font-size: 13px
+      text-transform: uppercase
+      letter-spacing: 0.9px
+      color: $light-color
+      transition: background-color 0.5s ease-in-out
+      &:hover
+        background-color: transparentize($light-color, .9)
+    & > li:hover .navbar-submenu
+      opacity: 1
+      transform: scaleY(1)
+  &-submenu
+    position: absolute
+    list-style: none
+    margin: 0
+    padding: 0
+    background-color: #211e3b
+    opacity: 0
+    transform: scaleY(0)
+    transform-origin: 0 0
+    transition: .5s ease-in-out
+    & > li > a
+      display: block
+      width: 213px
+      padding: 18px 35px
+      font-size: 13px
+      text-transform: uppercase
+      letter-spacing: 0.78px
+      color: $light-color
+      transition: background-color 0.5s ease-in-out
+      &:hover
+        background-color: transparentize($light-color, .9)
+
+
+.submenu
+  &-link 
+    width: 213px
+    &:after 
+      content: ''
+      position: absolute
+      top: 38px
+      width: 9px
+      height: 5px
+      margin-left: 10px
+      background: url('../img/header/arrow.png') center no-repeat
+    &_1
+      padding: 34px 49px 30px
+    &_2
+      padding: 34px 49px 30px 43px
+    &_3
+      padding: 34px 49px 30px 50px
+    &_4
+      padding: 34px 49px 30px 35px
+    &_5
+      padding: 34px 49px 30px 62px
+    &_6
+      padding: 34px 49px 30px 61px
+
+

@@ -2,6 +2,7 @@
   box-sizing: border-box
 
 body
+  position: relative
   +proxima_reg
 
 img
@@ -11,6 +12,28 @@ button, input, a, textarea, select
   &:focus 
     outline: none
 
+a 
+  text-decoration: none
+  color: $text-color
+
 .container
   width: 1170px
   margin: auto
+
+.line
+  width: 1px
+  background-color: $line-color
+  opacity: 0.1
+  &:first-child,
+  &:last-child
+    opacity: 0.3
+  &s
+    display: flex
+    justify-content: space-between
+    position: absolute
+    top: 0
+    bottom: 0
+    left: 0
+    right: 0
+    width: 1170px
+    margin: auto
