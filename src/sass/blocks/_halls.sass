@@ -1,0 +1,67 @@
+.halls
+  padding-top: 30px
+  &__square
+    margin: 0 auto 7px
+  &__subtitle
+    margin-bottom: 3px
+  &__title
+    margin: 0
+    margin-bottom: 43px
+  &__text
+    position: absolute
+    top: 40px
+    right: 57px
+    padding: 36px 40px 105px
+    background-color: $light-color
+  &__heading
+    margin: 0
+    margin-bottom: 18px
+    font-size: 24px
+    +playfair_bold
+    letter-spacing: 0.8px
+  &__line
+    display: inline-block
+    width: 61px
+    height: 1px
+    margin-top: 14px
+    margin-right: 20px
+    vertical-align: top
+    background-color: transparentize($line-color,.4) 
+  &__description
+    display: inline-block
+    max-width: 405px
+    margin-left: -3px
+    margin-bottom: 20px
+    font-size: 18px
+    line-height: 28px
+    color: $text-color2
+  &__button
+    margin-left: 86px
+    padding: 17px 24px 16px 24px
+  &__arrows
+    position: absolute
+    bottom: -22px
+    left: 46.4%
+    max-width: 88px
+    display: flex
+    justify-content: space-around
+    z-index: 1
+
+.slider
+  &__item
+    position: relative
+    display: flex
+    align-items: center
+
+.arrows
+  &__left, &__right
+    width: 44px
+    height: 44px
+    background-color: $main-color
+    text-align: center
+    line-height: 44px
+    cursor: pointer
+    transition: 0.2s
+    &:hover
+      background-color: $hover-color
+
