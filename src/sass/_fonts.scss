@@ -28,6 +28,16 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Playfair Display Italic';
+  src: url('../fonts/PlayfairDisplay-Italic.eot');
+  src: url('../fonts/PlayfairDisplay-Italic.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/PlayfairDisplay-Italic.woff') format('woff'),
+    url('../fonts/PlayfairDisplay-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 @mixin proxima_reg {
   font-family: 'Proxima Nova Regular', sans-serif;
 }
@@ -38,4 +48,8 @@
 
 @mixin playfair_bold {
   font-family: 'Playfair Display Bold', serif;
+}
+
+@mixin playfair_italic {
+  font-family: 'Playfair Display Italic', serif;
 }

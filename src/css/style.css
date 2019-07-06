@@ -368,6 +368,14 @@ template {
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Playfair Display Italic';
+  src: url("../fonts/PlayfairDisplay-Italic.eot");
+  src: url("../fonts/PlayfairDisplay-Italic.eot?#iefix") format("embedded-opentype"), url("../fonts/PlayfairDisplay-Italic.woff") format("woff"), url("../fonts/PlayfairDisplay-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 /* Настройки интерфейса */
 * {
   -webkit-box-sizing: border-box;
@@ -446,6 +454,24 @@ a {
   font-family: 'Playfair Display Bold', serif;
   text-align: center;
   letter-spacing: 1px;
+}
+
+.button {
+  display: block;
+  padding: 16px 21px 17px 25px;
+  background-color: #fab91e;
+  border: none;
+  font-size: 15px;
+  font-weight: 600;
+  font-family: 'Gotham Pro Regular', sans-serif;
+  color: rgba(8, 4, 37, 0.5);
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.button:hover {
+  background-color: #d39500;
+  cursor: pointer;
 }
 
 /* Настройка стилей header */
@@ -706,9 +732,75 @@ a {
   letter-spacing: 0.4px;
 }
 
+.reasons__heading-2 {
+  padding-right: 3px;
+}
+
 .reasons__text {
   margin: 0;
   font-size: 14px;
   line-height: 20px;
   color: rgba(8, 4, 37, 0.6);
+}
+
+/* Настройка стилей для блока Наша фотостудия */
+.about {
+  position: relative;
+  padding-top: 61px;
+}
+
+.about__square {
+  margin: 0 auto 7px;
+}
+
+.about__subtitle {
+  margin-bottom: 1px;
+}
+
+.about__title {
+  margin: 0;
+  margin-bottom: 32px;
+  letter-spacing: 1.2px;
+}
+
+.about__image {
+  position: absolute;
+  top: -100px;
+  left: 40.6%;
+  z-index: -1;
+}
+
+.about__text {
+  display: block;
+  max-width: 940px;
+  margin: 0 auto 30px;
+  padding-left: 22px;
+  font-size: 22px;
+  font-family: 'Playfair Display Italic', serif;
+  text-align: center;
+  line-height: 36px;
+}
+
+.about__description {
+  max-width: 730px;
+  margin: 0 auto;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  color: rgba(8, 4, 37, 0.6);
+  text-align: center;
+}
+
+.about__description-1 {
+  margin-bottom: 10px;
+  padding-left: 11px;
+}
+
+.about__description-2 {
+  margin-bottom: 42px;
+  padding-left: 2px;
+}
+
+.about__button {
+  margin: 0 auto;
 }
