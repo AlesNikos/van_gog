@@ -1,0 +1,89 @@
+.photoshoots
+  padding-top: 70px
+  &__square
+    margin: 0 auto 7px
+  &__subtitle
+    margin-bottom: 1px
+  &__title
+    margin: 0
+    margin-bottom: 47px
+  
+.card
+  &s
+    display: flex
+    justify-content: flex-start
+    flex-wrap: wrap
+  &__item
+    position: relative
+    min-height: 300px
+    margin-right: 50px
+    margin-bottom: 11px
+    &:nth-child(7)
+      margin-bottom: 10px
+    &:nth-child(10)
+      margin-top: -4px
+  &__image
+    overflow: hidden
+    width: 340px
+    height: 227px
+    img
+      transition: all 1s ease-out
+      &:hover
+        transform: scale(1.1)
+  &__link
+    display: inline-block
+    width: 44px
+    height: 44px
+    margin-left: 33px
+    background-color: $main-color
+    background-image: url('../img/photoshoots/arrow.png')
+    background-repeat: no-repeat
+    background-position: center center
+    &:hover
+      background-color: $hover-color
+    &-2, &-5, &-8
+      margin-left: 35px
+    &-3, &-6, &-9
+      margin-left: 36px
+    &-text
+      display: block
+      max-width: 100px
+      font-size: 18px
+      font-weight: 700
+      line-height: 24px
+      letter-spacing: 0.3px
+      &:hover
+        color: $hover-color
+      &_3
+        max-width: 150px
+      &_4
+        max-width: 150px
+      &_6
+        max-width: 150px
+  &__title
+    position: absolute
+    bottom: 6px
+    right: 0
+    display: inline-block
+    padding: 38px 120px 25px 43px
+    background-color: $light-color
+    &-2
+      padding: 39px 119px 24px 41px
+    &-3
+      padding: 39px 38px 24px 45px
+      right: 27px
+    &-4 
+      padding: 38px 41px 25px 42px
+      right: 30px
+    &-5
+      padding: 38px 118px 25px 43px
+    &-6
+      padding: 38px 65px 25px 45px
+    &-7
+      padding: 38px 120px 26px 43px
+    &-8
+      padding: 37px 90px 26px 42px
+      right: 29px
+    &-9
+      padding: 37px 114px 26px 46px
+    
