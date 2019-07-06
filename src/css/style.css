@@ -423,6 +423,31 @@ a {
   margin: auto;
 }
 
+.section-square {
+  display: block;
+  width: 11px;
+  height: 11px;
+  background-color: #fab91e;
+}
+
+.section-subtitle {
+  display: block;
+  padding-left: 4px;
+  font-size: 12px;
+  color: rgba(8, 4, 37, 0.6);
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.36px;
+}
+
+.section-title {
+  padding-left: 3px;
+  font-size: 52px;
+  font-family: 'Playfair Display Bold', serif;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
 /* Настройка стилей header */
 .header {
   background: url("../img/header/header-bg.png") center no-repeat;
@@ -449,12 +474,12 @@ a {
 
 .contacts__phone {
   margin-top: 7px;
-  margin-left: 73px;
+  margin-left: 72px;
 }
 
 .contacts__adress {
   margin-top: 7px;
-  margin-right: 92px;
+  margin-right: 93px;
   margin-left: -23px;
 }
 
@@ -571,10 +596,9 @@ a {
 .navbar-submenu > li > a {
   display: block;
   width: 213px;
-  padding: 18px 35px;
-  font-size: 13px;
-  text-transform: uppercase;
-  letter-spacing: 0.78px;
+  padding: 18px 28px 17px 48px;
+  font-size: 14px;
+  letter-spacing: 0.1px;
   color: #ffffff;
   -webkit-transition: background-color 0.5s ease-in-out;
   transition: background-color 0.5s ease-in-out;
@@ -611,7 +635,7 @@ a {
 }
 
 .submenu-link_4 {
-  padding: 34px 49px 30px 35px;
+  padding: 34px 49px 30px 34px;
 }
 
 .submenu-link_5 {
@@ -619,5 +643,72 @@ a {
 }
 
 .submenu-link_6 {
-  padding: 34px 49px 30px 61px;
+  padding: 34px 46px 30px 61px;
+}
+
+/* Настройка стилей для блока 5 причин */
+.reasons {
+  padding-top: 71px;
+}
+
+.reasons__square {
+  margin: 0 auto 7px;
+}
+
+.reasons__subtitle {
+  margin-bottom: 1px;
+}
+
+.reasons__title {
+  margin: 0;
+  margin-bottom: 52px;
+}
+
+.reasons-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.reasons__item {
+  max-width: 328px;
+  min-height: 220px;
+  margin-bottom: 4px;
+  padding-left: 3px;
+  text-align: center;
+}
+
+.reasons__item:first-child {
+  padding-left: 0;
+}
+
+.reasons__item:nth-child(4) {
+  margin-left: 192px;
+}
+
+.reasons__item:nth-child(5) {
+  margin-right: 193px;
+}
+
+.reasons__image {
+  margin-bottom: 31px;
+}
+
+.reasons__heading {
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-family: 'Playfair Display Bold', serif;
+  letter-spacing: 0.4px;
+}
+
+.reasons__text {
+  margin: 0;
+  font-size: 14px;
+  line-height: 20px;
+  color: rgba(8, 4, 37, 0.6);
 }
