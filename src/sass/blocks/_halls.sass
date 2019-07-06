@@ -46,8 +46,25 @@
     display: flex
     justify-content: space-around
     z-index: 1
+  &__links
+    display: flex
+    flex-basis: 50%
+    margin-top: 122px
+  &__link
+    display: block
+    flex-basis: 50%
+    background-color: $main-color
+    transition: 0.2s
+    &:hover
+      background-color: $hover-color
+    &-1
+      padding: 39px 71px 30px 97px
+    &-2
+      padding: 41px 37px 28px 93px
 
 .slider
+  &-block
+    position: relative
   &__item
     position: relative
     display: flex
@@ -64,4 +81,30 @@
     transition: 0.2s
     &:hover
       background-color: $hover-color
+
+.link
+  &-block
+    display: flex
+    align-items: center
+  &__text
+    display: inline-block
+    max-width: 190px
+    margin-right: 95px
+    font-size: 16px
+    line-height: 24px
+    +playfair_bold
+    letter-spacing: 0.32px
+    &-2
+      margin-bottom: 14px
+      margin-right: 101px
+      letter-spacing: 0.5px
+  &__arrow
+    margin-right: 47px
+    margin-bottom: 7px
+    &-2
+      margin-right: 50px
+  &__image
+    margin-top: -6px
+    &-1
+      margin-top: -6px
 
