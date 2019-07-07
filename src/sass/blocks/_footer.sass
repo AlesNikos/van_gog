@@ -1,0 +1,90 @@
+.footer
+  &__contacts
+    display: flex
+    justify-content: space-around
+    align-items: center
+    padding: 51px 0
+  &__phone
+    display: flex
+    align-items: center
+    margin-left: -17px
+    margin-right: 16px
+    &-image
+      width: 11px
+      height: 11px
+      margin-right: 20px
+    &-text
+      width: 172px
+      font-size: 13px
+      line-height: 24px
+      +gotham_reg
+    &-number
+      font-weight: 600
+  &__mail
+    display: flex
+    align-items: center
+    &-image
+      width: 15px
+      height: 11px
+      margin-right: 20px
+    &-text
+      width: 195px
+      font-size: 13px
+      line-height: 24px
+      +gotham_reg
+    &-email
+      position: relative
+      font-weight: 600
+      &:after
+        position: absolute
+        bottom: -2px
+        content: ''
+        display: block
+        width: 100%
+        height: 1px
+        background-color: $main-color
+  &__adress
+    display: flex
+    align-items: center
+    margin-right: -5px
+    &-image
+      width: 9px
+      height: 12px
+      margin-right: 20px
+    &-text
+      width: 172px
+      font-size: 13px
+      line-height: 24px
+      +gotham_reg
+    &-location
+      font-weight: 600
+  &__dev
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 39px 0 32px
+    border-top: 1px solid transparentize($line-color,.8) 
+    &-copyright
+      margin-left: 76px
+      font-size: 12px
+      text-transform: uppercase
+      color: $text-color2
+      letter-spacing: 0.3px
+    &-block
+      display: flex
+      align-items: center
+      margin-right: 97px
+    &-logo
+      margin-right: 10px
+    &-text
+      width: 250px
+      font-size: 12px
+      line-height: 16px
+      text-transform: uppercase
+      color: $text-color2
+      letter-spacing: 0.1px
+    &-link
+      display: block
+      color: $text-color2
+      text-transform: none
+      text-decoration: underline
