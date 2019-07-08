@@ -21,23 +21,18 @@ a
   margin: auto
 
 .line
-  // width: 1px
-  // background-color: $line-color
-  // opacity: 0.1
-  // &:first-child,
-  // &:last-child
-  //   opacity: 0.3
   display: inline-block
   position: relative
   width: 195px
   height: 100%
   padding: 0
   margin: 0
-  opacity: 0
   background-color: $light-color
-  border-left: 1px solid transparentize($line-color,.8)
+  border-left: 1px solid transparentize($line-color,.9)
+  &:first-child
+    border-left: 1px solid transparentize($line-color,.7)
   &:last-child
-    border-right: 1px solid transparentize($line-color,.8)
+    border-right: 1px solid transparentize($line-color,.7)
   &s
     display: flex
     justify-content: space-between
@@ -50,8 +45,6 @@ a
     z-index: -1
     width: 1170px
     margin: auto
-
-
 
 .section
   &-square
@@ -87,3 +80,4 @@ a
   &:hover
     background-color: $hover-color
     cursor: pointer
+

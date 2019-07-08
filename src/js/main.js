@@ -5,12 +5,24 @@ $(document).ready(function() {
   $('.hero-slider').owlCarousel({
     loop: true,
     dots: true,
+    autoplay: true,
+    autoplayTimeout: 5000,
+    autoplayHoverPause: true,
     responsive: {
       0: {
         items: 1,
       }
     },
     smartSpeed: 500
+  });
+
+  var hero = $('.hero-slider');
+  hero.owlCarousel();
+  $('.hero-arrows__left').click(function () {
+    hero.trigger('prev.owl.carousel');
+  });
+  $('.hero-arrows__right').click(function () {
+    hero.trigger('next.owl.carousel');
   });
 
   $('.slider').owlCarousel({
@@ -32,17 +44,5 @@ $(document).ready(function() {
   $('.arrows__right').click(function () {
     slider.trigger('next.owl.carousel');
   });
-
- 
-
-  var hero = $('.hero-slider');
-  hero.owlCarousel();
-  $('.hero-arrows__left').click(function () {
-    hero.trigger('prev.owl.carousel');
-  });
-  $('.hero-arrows__right').click(function () {
-    hero.trigger('next.owl.carousel');
-  });
-
 
 });
