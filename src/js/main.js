@@ -1,7 +1,19 @@
 $(document).ready(function() {
 
   /* Инициализация Owl Carousel */
-  $('.owl-carousel').owlCarousel({
+
+  $('.hero-slider').owlCarousel({
+    loop: true,
+    dots: true,
+    responsive: {
+      0: {
+        items: 1,
+      }
+    },
+    smartSpeed: 500
+  });
+
+  $('.slider').owlCarousel({
     loop: true,
     dots: false,
     responsive: {
@@ -12,13 +24,24 @@ $(document).ready(function() {
     smartSpeed: 500
   });
 
-  var owl = $('.owl-carousel');
-  owl.owlCarousel();
+  var slider = $('.slider');
+  slider.owlCarousel();
   $('.arrows__left').click(function () {
-    owl.trigger('prev.owl.carousel');
+    slider.trigger('prev.owl.carousel');
   });
   $('.arrows__right').click(function () {
-    owl.trigger('next.owl.carousel');
+    slider.trigger('next.owl.carousel');
+  });
+
+ 
+
+  var hero = $('.hero-slider');
+  hero.owlCarousel();
+  $('.hero-arrows__left').click(function () {
+    hero.trigger('prev.owl.carousel');
+  });
+  $('.hero-arrows__right').click(function () {
+    hero.trigger('next.owl.carousel');
   });
 
 

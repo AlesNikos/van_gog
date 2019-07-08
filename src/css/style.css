@@ -406,13 +406,19 @@ a {
 }
 
 .line {
-  width: 1px;
-  background-color: #999999;
-  opacity: 0.1;
+  display: inline-block;
+  position: relative;
+  width: 195px;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  opacity: 0;
+  background-color: #ffffff;
+  border-left: 1px solid rgba(153, 153, 153, 0.2);
 }
 
-.line:first-child, .line:last-child {
-  opacity: 0.3;
+.line:last-child {
+  border-right: 1px solid rgba(153, 153, 153, 0.2);
 }
 
 .lines {
@@ -422,11 +428,13 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  position: absolute;
+  position: fixed;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
+  opacity: 1;
+  z-index: -1;
   width: 1170px;
   margin: auto;
 }
@@ -779,6 +787,9 @@ a {
 }
 
 .owl-theme .owl-dots {
+  position: absolute;
+  bottom: -200px;
+  right: 125px;
   text-align: center;
   -webkit-tap-highlight-color: transparent;
 }
@@ -790,10 +801,10 @@ a {
 }
 
 .owl-theme .owl-dots .owl-dot span {
-  width: 10px;
-  height: 10px;
-  margin: 5px 7px;
-  background: #D6D6D6;
+  width: 6px;
+  height: 5px;
+  margin: 5px 10px;
+  background: rgba(255, 255, 255, 0.6);
   display: block;
   -webkit-backface-visibility: visible;
   -webkit-transition: opacity 200ms ease;
@@ -802,7 +813,11 @@ a {
 }
 
 .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
-  background: #869791;
+  background: #fab91e;
+}
+
+.owl-theme .owl-dots .owl-dot.active span {
+  background: #ffffff;
 }
 
 /* Настройка стилей header */
@@ -811,6 +826,7 @@ a {
   background-size: cover;
   width: 100%;
   height: 100vh;
+  overflow: auto;
 }
 
 .contacts {
@@ -894,6 +910,85 @@ a {
 .adress__text-link {
   font-weight: 600;
   color: rgba(255, 255, 255, 0.5);
+}
+
+.hero {
+  position: relative;
+}
+
+.hero__position {
+  margin-top: 213px;
+}
+
+.hero__text {
+  margin-left: 94px;
+}
+
+.hero__title {
+  max-width: 545px;
+  margin: 0;
+  margin-bottom: 23px;
+  font-size: 52px;
+  line-height: 63.28px;
+  color: #ffffff;
+  font-family: 'Playfair Display Bold', serif;
+  letter-spacing: 1px;
+}
+
+.hero__subtitle {
+  display: block;
+  max-width: 495px;
+  margin-bottom: 42px;
+  font-size: 18px;
+  font-family: 'Gotham Pro Regular', sans-serif;
+  color: #ffffff;
+  line-height: 28px;
+  letter-spacing: -0.1px;
+}
+
+.hero__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.hero__button {
+  margin-right: 20px;
+  padding: 16px 23px 17px 23px;
+}
+
+.hero-arrows__left, .hero-arrows__right {
+  position: absolute;
+  width: 19px;
+  height: 12px;
+  cursor: pointer;
+  color: #ffffff;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.hero-arrows__left span i, .hero-arrows__right span i {
+  font-size: 22px;
+}
+
+.hero-arrows__left:hover, .hero-arrows__right:hover {
+  color: #d39500;
+}
+
+.hero-arrows__left {
+  bottom: 130px;
+  left: -38px;
+}
+
+.hero-arrows__right {
+  bottom: 130px;
+  right: -38px;
+}
+
+.hero__mouse {
+  position: absolute;
+  bottom: -200px;
+  left: -37px;
 }
 
 /* Настройка стилей для меню */
@@ -1581,7 +1676,10 @@ a {
       -ms-flex-align: center;
           align-items: center;
   padding: 39px 0 32px;
+  background-color: #ffffff;
   border-top: 1px solid rgba(153, 153, 153, 0.2);
+  border-left: 1px solid rgba(153, 153, 153, 0.3);
+  border-right: 1px solid rgba(153, 153, 153, 0.3);
 }
 
 .footer__dev-copyright {
@@ -1615,8 +1713,11 @@ a {
   letter-spacing: 0.1px;
 }
 
+.footer__dev-text span {
+  text-transform: none;
+}
+
 .footer__dev-link {
-  display: block;
   color: rgba(8, 4, 37, 0.6);
   text-transform: none;
   text-decoration: underline;

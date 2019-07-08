@@ -3,6 +3,7 @@
   background-size: cover
   width: 100%
   height: 100vh
+  overflow: auto
 
 
 .contacts
@@ -52,3 +53,57 @@
     &-link
       font-weight: 600
       color: transparentize($light-color,.5)
+
+.hero
+  position: relative
+  &__position
+    margin-top: 213px
+  &__text
+    margin-left: 94px
+  &__title
+    max-width: 545px
+    margin: 0
+    margin-bottom: 23px
+    font-size: 52px
+    line-height: 63.28px
+    color: $light-color
+    +playfair_bold
+    letter-spacing: 1px
+  &__subtitle
+    display: block
+    max-width: 495px
+    margin-bottom: 42px
+    font-size: 18px
+    +gotham_reg
+    color: $light-color
+    line-height: 28px
+    letter-spacing: -0.1px
+  &__buttons 
+    display: flex
+  &__button
+    margin-right: 20px
+    padding: 16px 23px 17px 23px
+  &-arrows
+    &__left, &__right
+      position: absolute
+      width: 19px
+      height: 12px
+      cursor: pointer
+      color: $light-color
+      transition: 0.2s
+      span
+        i
+          font-size: 22px
+      &:hover
+        color: $hover-color
+    &__left
+      bottom: 130px
+      left: -38px
+    &__right
+      bottom: 130px
+      right: -38px
+  &__mouse
+    position: absolute
+    bottom: -200px
+    left: -37px
+    

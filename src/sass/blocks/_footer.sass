@@ -63,7 +63,10 @@
     justify-content: space-between
     align-items: center
     padding: 39px 0 32px
+    background-color: $light-color
     border-top: 1px solid transparentize($line-color,.8) 
+    border-left: 1px solid transparentize($line-color,.7) 
+    border-right: 1px solid transparentize($line-color,.7) 
     &-copyright
       margin-left: 76px
       font-size: 12px
@@ -83,8 +86,9 @@
       text-transform: uppercase
       color: $text-color2
       letter-spacing: 0.1px
+      span
+        text-transform: none
     &-link
-      display: block
       color: $text-color2
       text-transform: none
       text-decoration: underline
