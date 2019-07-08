@@ -791,7 +791,7 @@ a {
 
 .owl-theme .owl-dots {
   position: absolute;
-  bottom: -200px;
+  bottom: 9.1%;
   right: 125px;
   text-align: center;
   -webkit-tap-highlight-color: transparent;
@@ -825,11 +825,12 @@ a {
 
 /* Настройка стилей header */
 .header {
+  position: relative;
   background: url("../img/header/header-bg.png") center no-repeat;
   background-size: cover;
   width: 100%;
   height: 100vh;
-  overflow: auto;
+  min-height: 700px;
 }
 
 .contacts {
@@ -855,7 +856,7 @@ a {
 
 .contacts__adress {
   margin-top: 7px;
-  margin-right: 93px;
+  margin-right: 85px;
   margin-left: -23px;
 }
 
@@ -903,7 +904,7 @@ a {
 }
 
 .adress__text {
-  width: 172px;
+  width: 180px;
   font-size: 13px;
   line-height: 24px;
   font-family: 'Gotham Pro Regular', sans-serif;
@@ -915,12 +916,16 @@ a {
   color: rgba(255, 255, 255, 0.5);
 }
 
-.hero {
-  position: relative;
+.hero__position {
+  position: absolute;
+  width: 1170px;
+  height: 57%;
+  top: 43.2%;
 }
 
-.hero__position {
-  margin-top: 213px;
+.hero-slider {
+  height: 100%;
+  position: relative;
 }
 
 .hero__text {
@@ -932,6 +937,7 @@ a {
   margin: 0;
   margin-bottom: 23px;
   font-size: 52px;
+  font-weight: normal;
   line-height: 63.28px;
   color: #ffffff;
   font-family: 'Playfair Display Bold', serif;
@@ -979,19 +985,19 @@ a {
 }
 
 .hero-arrows__left {
-  bottom: 130px;
+  top: 155px;
   left: -38px;
 }
 
 .hero-arrows__right {
-  bottom: 130px;
+  top: 155px;
   right: -38px;
 }
 
 .hero__mouse {
   position: absolute;
-  bottom: -200px;
-  left: -37px;
+  bottom: 2.5%;
+  left: 17.4%;
 }
 
 /* Настройка стилей для меню */
@@ -1046,6 +1052,7 @@ a {
           transform-origin: 0 0;
   -webkit-transition: .5s ease-in-out;
   transition: .5s ease-in-out;
+  z-index: 99;
 }
 
 .navbar-submenu > li > a {
@@ -1343,7 +1350,7 @@ a {
 }
 
 .card__link-text_6 {
-  max-width: 150px;
+  max-width: 151px;
 }
 
 .card__title {
@@ -1374,7 +1381,7 @@ a {
 }
 
 .card__title-6 {
-  padding: 38px 65px 25px 45px;
+  padding: 38px 65px 25px 44px;
 }
 
 .card__title-7 {
@@ -1631,8 +1638,10 @@ a {
   font-weight: 600;
 }
 
-.footer__mail-email:after {
+.footer__mail-email::after {
   position: absolute;
+  left: 0;
+  right: 0;
   bottom: -2px;
   content: '';
   display: block;
@@ -1648,7 +1657,7 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-right: -5px;
+  margin-right: -13px;
 }
 
 .footer__adress-image {
@@ -1658,7 +1667,7 @@ a {
 }
 
 .footer__adress-text {
-  width: 172px;
+  width: 180px;
   font-size: 13px;
   line-height: 24px;
   font-family: 'Gotham Pro Regular', sans-serif;

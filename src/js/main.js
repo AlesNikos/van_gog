@@ -25,6 +25,7 @@ $(document).ready(function() {
     hero.trigger('next.owl.carousel');
   });
 
+
   $('.slider').owlCarousel({
     loop: true,
     dots: false,

@@ -35,8 +35,10 @@
     &-email
       position: relative
       font-weight: 600
-      &:after
+      &::after
         position: absolute
+        left: 0
+        right: 0
         bottom: -2px
         content: ''
         display: block
@@ -46,13 +48,13 @@
   &__adress
     display: flex
     align-items: center
-    margin-right: -5px
+    margin-right: -13px
     &-image
       width: 9px
       height: 12px
       margin-right: 20px
     &-text
-      width: 172px
+      width: 180px
       font-size: 13px
       line-height: 24px
       +gotham_reg
